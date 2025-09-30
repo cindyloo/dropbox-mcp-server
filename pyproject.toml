@@ -9,7 +9,7 @@ description = "MCP server for reading and querying files from Dropbox"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    { name = "Cindy and Claude", email = "cindyb@mit.edu" }
+    { name = "Cindy et Claude", email = "cindyb@mit.edu" }
 ]
 keywords = ["mcp", "dropbox", "file-reader", "server"]
 classifiers = [
@@ -28,6 +28,8 @@ dependencies = [
     "pydantic>=2.0.0",
     "PyPDF2>=3.0.0",
     "python-docx>=1.0.0",
+    "uvicorn>=0.27.0",
+    "starlette>=0.35.0",
 ]
 
 [project.urls]
@@ -36,4 +38,4 @@ Repository = "https://github.com/cindyloo/dropbox-mcp-server"
 Issues = "https://github.com/cindyloo/dropbox-mcp-server/issues"
 
 [project.scripts]
-dropbox-mcp-server = "dropbox_server:mcp.run"
+dropbox-mcp-server = "dropbox_server:main"
