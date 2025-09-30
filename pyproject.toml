@@ -37,6 +37,3 @@ Issues = "https://github.com/cindyloo/dropbox-mcp-server/issues"
 
 [project.scripts]
 dropbox-mcp-server = "dropbox_server:mcp.run"
-
-[tool.hatch.build.targets.wheel]
-packages = ["."]

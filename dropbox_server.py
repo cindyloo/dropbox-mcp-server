@@ -390,6 +390,17 @@ except Exception as e:
     logger.warning("Make sure to set DROPBOX_ACCESS_TOKEN environment variable")
 
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the MCP server."""
+    try:
+        initialize_dropbox_client()
+    except Exception as e:
+        logger.warning(f"Dropbox client initialization failed: {e}")
+        logger.warning("Make sure to set DROPBOX_ACCESS_TOKEN environment variable")
+    
     # Run the server
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
