@@ -1,5 +1,7 @@
 # Dropbox MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@cindyloo/dropbox-mcp-server)](https://smithery.ai/server/@cindyloo/dropbox-mcp-server)
+
 A Model Context Protocol (MCP) server that provides read access to Dropbox files with advanced search and content extraction capabilities.
 
 ## Features
@@ -18,6 +20,14 @@ A Model Context Protocol (MCP) server that provides read access to Dropbox files
 - **Text files** - TXT, MD, PY, JS, HTML, CSS, JSON, CSV
 
 ## Installation
+
+### Installing via Smithery
+
+To install dropbox-mcp-server automatically via [Smithery](https://smithery.ai/server/@cindyloo/dropbox-mcp-server):
+
+```bash
+npx -y @smithery/cli install @cindyloo/dropbox-mcp-server
+```
 
 ### Prerequisites
 
