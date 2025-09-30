@@ -1,4 +1,6 @@
-runtime: "python"
-python:
-  version: "3.12"
-  entrypoint: "dropbox_server.py"
+runtime: "container"
+build:
+  dockerfile: "Dockerfile"
+  dockerBuildPath: "."
+startCommand:
+  type: "http"
